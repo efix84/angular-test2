@@ -1,0 +1,29 @@
+<!--<div *ngIf="nf$|async as nf">
+	{{nf.ip}}
+	{{nf.country_code}}
+  {{nf |json}}
+</div>-->
+
+
+<!--<ul *ngFor="item$ | async as item">
+<li>{{item.name}}</li>
+</ul>-->
+
+  <hr />
+<div *ngFor="let item of items$ | async">
+  <div *ngIf="item._id!==updatingId">
+    {{ item.name }}
+    {{ item.alter }}
+    {{ item.geburtsort }}
+    <button *ngIf="item._id" (click)="delete(item._id)">delete</button>
+    <button (click)="updatingId=item._id">update</button>
+  </div>
+  <app-formular (update)="updateItem($event)" (cancel)="updatingId=undefined" *ngIf="item._id===updatingId" [item]="item"></app-formular>
+  <hr />
+</div>
+
+
+
+
+
+

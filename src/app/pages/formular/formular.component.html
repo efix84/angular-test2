@@ -1,0 +1,26 @@
+<form [formGroup]="myFormGroup" >
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="alter">
+      Alter
+    </label>
+    <input id="alter" type="text" formControlName="alter">
+  </div>
+
+  <div>
+    <label for="geburtsort">
+      Geburtsort
+    </label>
+    <input id="geburtsort" type="text" formControlName="geburtsort">
+  </div>
+
+  <button class="button" (click)="onCancel()">cancel</button>
+  <button class="button" (click)="onSubmit()">submit</button>
+</form>

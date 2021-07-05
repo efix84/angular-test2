@@ -8,13 +8,17 @@ import { FormularComponent } from './pages/formular/formular.component';
 import { IndexComponent } from './pages/index/index.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TestComponent } from './pages/test/test.component';
+import { ChildComponent } from './pages/test/components/child/child.component';
+import { ParentComponent } from './pages/test/components/parent/parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularComponent,
     IndexComponent,
-    TestComponent
+    TestComponent,
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,

@@ -12,9 +12,10 @@
   <hr />
 <div *ngFor="let item of items$ | async">
   <div *ngIf="item._id!==updatingId">
-    {{ item.name }}
-    {{ item.alter }}
-    {{ item.geburtsort }}
+    <p>{{ item.header }}<br>
+      {{ item.text }}
+    </p>
+    
     <button *ngIf="item._id" (click)="delete(item._id)">delete</button>
     <button (click)="updatingId=item._id">update</button>
   </div>

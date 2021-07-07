@@ -1,0 +1,25 @@
+nav {
+    background-color: darkgoldenrod;
+}
+
+
+ul {
+   
+    display: flex;
+    background-color: bisque;
+    list-style-type: none;
+    /*margin-block-start: 0;*/
+    /*padding: 0 0 0 0;*/
+    padding-inline-start: 0;
+}
+
+li { 
+    background-color:cadetblue;
+    text-align: center;
+    flex: 1;
+    height: 3em;
+}
+
+li:hover {
+    background-color: chartreuse;
+}

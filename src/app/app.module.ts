@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TestComponent } from './pages/test/test.component';
 import { ChildComponent } from './pages/test/components/child/child.component';
 import { ParentComponent } from './pages/test/components/parent/parent.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ParentComponent } from './pages/test/components/parent/parent.component
     IndexComponent,
     TestComponent,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

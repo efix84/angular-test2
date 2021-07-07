@@ -27,9 +27,8 @@ export class FormularComponent implements OnInit {
     private router: Router
   ) {
     this.myFormGroup = this.formBuilder.group({
-      name: '',
-      alter: '',
-      geburtsort: '',
+      header: '',
+      text: '',
   })
   }
 

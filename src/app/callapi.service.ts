@@ -3,9 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 export interface Item {
   _id?: string
-  name: string
-  alter: string
-  geburtsort: string
+  header: string
+  text: string
 }
 
 @Injectable({

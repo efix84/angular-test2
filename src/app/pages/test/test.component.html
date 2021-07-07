@@ -1,2 +1,9 @@
-<app-parent>
-</app-parent>
+<!--<app-parent></app-parent>-->
+
+<input type="text" [(ngModel)]="searchitem" (keyup) = "onChange()">
+<hr>
+<div *ngFor="let item of items$ | async | filter : searchitem">
+      <p><b>{{ item.header }}</b><br>
+        {{ item.text }}
+      </p>
+</div>
